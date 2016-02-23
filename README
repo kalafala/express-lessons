@@ -25,18 +25,23 @@ To use a remote repo
 (assuming a repo has been created on github)
 git remote add origin https://github.com/kalafala/express-lessons
 git remote -v 
+(above is one-time step)
+
 git push origin master
    OR
 git push origin <branch name>
+(each time we want to push to the server)
 
 To deploy in another directory
 ------------------------------
 mkdir <some new directory>
 cd <some new directory>
 git_clone <original repo> .
-npm install
 
 OR
 
 git clone it clone https://github.com/kalafala/express-lessons.git
 	above will create an express-lessons directory in pwd
+
+
+npm install
