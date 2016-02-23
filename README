@@ -1,7 +1,21 @@
+To seed initial project directory
+---------------------------------
 Create a .gitignore with node_modules
 npm init
 npm install express --save
 create index.js
 git init
 git add *
+git add .gitignore
 git commit
+
+Can use "git status" to check status of current directory, 
+
+
+To deploy in another directory
+------------------------------
+mkdir <some new directory>
+cd <some new directory>
+git_clone <original repo> .
+npm install
+
