@@ -10,6 +10,12 @@ git add .gitignore
 git commit
 
 Can use "git status" to check status of current directory, 
+When making any changes:
+	git add <filename>
+	git commit
+
+Can use "git log" to list versions
+Can use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout HEAD" to checkout the latest version.
 
 
 To deploy in another directory
