@@ -20,6 +20,12 @@ Use "git checkout -B <new branchname>" to create a new branch
 	- Will need to git add, git commit any changes
 Use "git branch" to list branches, highlighting current branch
 
+To use a remote repo
+--------------------
+git remote add origin https://github.com/kalafala/express-lessons
+git remote -v 
+git push origin master
+
 To deploy in another directory
 ------------------------------
 mkdir <some new directory>
