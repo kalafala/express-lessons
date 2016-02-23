@@ -36,3 +36,7 @@ cd <some new directory>
 git_clone <original repo> .
 npm install
 
+OR
+
+git clone it clone https://github.com/kalafala/express-lessons.git
+	above will create an express-lessons directory in pwd
