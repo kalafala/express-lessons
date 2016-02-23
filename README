@@ -9,14 +9,16 @@ git add *
 git add .gitignore
 git commit
 
-Can use "git status" to check status of current directory, 
+Use "git status" to check status of current directory, 
 When making any changes:
 	git add <filename>
 	git commit
 
-Can use "git log" to list versions
-Can use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout HEAD" to checkout the latest version.
-
+Use "git log" to list versions
+Use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout master" to checkout the latest version.
+Use "git checkout -B <new branchname>" to create a new branch
+	- Will need to git add, git commit any changes
+Use "git branch" to list branches, highlighting current branch
 
 To deploy in another directory
 ------------------------------
