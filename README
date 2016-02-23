@@ -22,9 +22,12 @@ Use "git branch" to list branches, highlighting current branch
 
 To use a remote repo
 --------------------
+(assuming a repo has been created on github)
 git remote add origin https://github.com/kalafala/express-lessons
 git remote -v 
 git push origin master
+   OR
+git push origin <branch name>
 
 To deploy in another directory
 ------------------------------
