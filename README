@@ -15,7 +15,7 @@ When making any changes:
 	git commit
 
 Can use "git log" to list versions
-Can use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout HEAD" to checkout the latest version.
+Can use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout master" to checkout the latest version.
 
 
 To deploy in another directory
