@@ -1,6 +1,10 @@
 var express = require('express'),
+	morgan = require ('morgan'),
 	app = express(),
 	port = process.env.PORT || 3000;
+
+// Add logging
+app.use(morgan('dev'));
 
 app.use(function(req,res) {
 var data = '<h1>hello world</h1>';
