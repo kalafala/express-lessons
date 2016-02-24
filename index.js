@@ -2,6 +2,8 @@
 // credit https://github.com/tonypujals/express-demo/tree/master/lesson-03-A
 // credit https://github.com/tonypujals/express-demo/blob/master/lesson-03-C/app.js
 // credit https://github.com/tonypujals/express-demo/blob/master/lesson-04/app.js
+// credit https://github.com/tonypujals/express-demo/blob/master/lesson-05/app.js
+
 
 
 var express = require('express'),
@@ -20,6 +22,8 @@ res.end(data);
 });
 
 
-app.listen(port);
+// Ensure log only once listen is successful
+var server = app.listen(port, function() {
 
 console.log('server started on port %s', port);
+});

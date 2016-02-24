@@ -9,6 +9,7 @@ git add *
 git add .gitignore
 (or I think "get add ." would replace the above two)
 git commit
+Note git "commit -a" does both commit and add
 
 Use "git status" to check status of current directory, 
 When making any changes:
@@ -17,6 +18,7 @@ When making any changes:
 
 Use "git log" to list versions
 Use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout master" to checkout the latest version.
+Use "git revert HEAD" to backout last change, OR "git revert HEAD-N" to revert changes specified by the N+1th last change.
 
 Branching
 ---------
