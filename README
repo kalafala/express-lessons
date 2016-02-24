@@ -7,21 +7,47 @@ create index.js
 git init
 git add *
 git add .gitignore
+(or I think "get add ." would replace the above two)
 git commit
 
-Can use "git status" to check status of current directory, 
+Use "git status" to check status of current directory, 
 When making any changes:
 	git add <filename>
 	git commit
 
-Can use "git log" to list versions
-Can use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout master" to checkout the latest version.
+Use "git log" to list versions
+Use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout master" to checkout the latest version.
 
+Branching
+---------
+Use "git checkout -B <new branchname>" to create a new branch
+	- Will need to git add, git commit any changes
+Use "git branch" to list branches, highlighting current branch
+Use "git checkout <branchname>" to switch branches
+
+To use a remote repo
+--------------------
+(assuming a repo has been created on github)
+git remote add origin https://github.com/kalafala/express-lessons
+git remote -v 
+(above is one-time step)
+
+git push origin master
+   OR
+git push origin <branch name>
+(each time we want to push to the server)
 
 To deploy in another directory
 ------------------------------
 mkdir <some new directory>
 cd <some new directory>
 git_clone <original repo> .
-npm install
 
+OR
+
+git clone https://github.com/kalafala/express-lessons.git
+	by default, above will create an express-lessons directory in pwd, if you want to specify a particular dir, just type that <dirname> after lessons.git above
+	(above URL can be copied from github web interface)
+
+
+npm install
