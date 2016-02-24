@@ -1,3 +1,5 @@
+// credit:  https://github.com/tonypujals/express-demo/blob/master/lesson-03-B/app.js
+
 var express = require('express'),
 	morgan = require ('morgan'),
 	app = express(),
