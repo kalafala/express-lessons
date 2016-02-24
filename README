@@ -9,6 +9,7 @@ git add *
 git add .gitignore
 (or I think "get add ." would replace the above two)
 git commit
+Note git "commit -a" does both commit and add
 
 Use "git status" to check status of current directory, 
 When making any changes:
