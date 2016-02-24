@@ -7,6 +7,7 @@ create index.js
 git init
 git add *
 git add .gitignore
+(or I think "get add ." would replace the above two)
 git commit
 
 Use "git status" to check status of current directory, 
@@ -16,6 +17,9 @@ When making any changes:
 
 Use "git log" to list versions
 Use "git checkout <unique portion of character code>" to check out a particular version, or "git checkout master" to checkout the latest version.
+
+Branching
+---------
 Use "git checkout -B <new branchname>" to create a new branch
 	- Will need to git add, git commit any changes
 Use "git branch" to list branches, highlighting current branch
@@ -40,8 +44,9 @@ git_clone <original repo> .
 
 OR
 
-git clone it clone https://github.com/kalafala/express-lessons.git
-	above will create an express-lessons directory in pwd
+git clone https://github.com/kalafala/express-lessons.git
+	by default, above will create an express-lessons directory in pwd, if you want to specify a particular dir, just type that <dirname> after lessons.git above
+	(above URL can be copied from github web interface)
 
 
 npm install
