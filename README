@@ -23,6 +23,7 @@ Branching
 Use "git checkout -B <new branchname>" to create a new branch
 	- Will need to git add, git commit any changes
 Use "git branch" to list branches, highlighting current branch
+Use "git checkout <branchname>" to switch branches
 
 To use a remote repo
 --------------------
