@@ -20,6 +20,8 @@ res.end(data);
 });
 
 
-app.listen(port);
+// Ensure log only once listen is successful
+var server = app.listen(port, function() {
 
 console.log('server started on port %s', port);
+});
