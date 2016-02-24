@@ -37,6 +37,9 @@ git push origin master
 git push origin <branch name>
 (each time we want to push to the server)
 
+git pull origin <branch name>
+(each time we want to pull from the server)
+
 To deploy in another directory
 ------------------------------
 mkdir <some new directory>
