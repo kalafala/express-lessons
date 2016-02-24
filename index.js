@@ -8,11 +8,25 @@ var express = require('express'),
 // Add logging
 app.use(morgan('dev'));
 
-app.use(function(req,res) {
+app.use(function(req,res,next) {
+if (req.url == '/test') {
+var data = '<h1>test world</h1>';
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	res.end(data);
+}
+next();
+}
+)
+
+app.use(function(req,res,next) {
+if (req.url == '/hello') {
 var data = '<h1>hello world</h1>';
 	res.writeHead(200, {'Content-Type': 'text/html'});
 	res.end(data);
-})
+}
+next();
+}
+);
 
 app.listen(port);
 
